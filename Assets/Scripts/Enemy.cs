@@ -18,4 +18,6 @@ public class Enemy : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public virtual void TakeDamage(float a_damage){}
 }

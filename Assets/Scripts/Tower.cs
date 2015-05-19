@@ -1,21 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Tower : Enemy {
+public class Tower : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		health = 100.0f;
-	
-	}
-	
+	public GameObject bulletPrefab;
+
+	public float rotationSpeed = 35;
+
 	// Update is called once per frame
 	void Update () {
-
-		if (health < 0) {
-			print("Object Destroyed");
-			Destroy(this.gameObject);
-		}
-	
+		transform.Rotate (Vector3.up * Time.deltaTime * rotationSpeed, Space.World);
 	}
+	
+
+	void OnTriggerEnter(Collider co)
+	{
+		if (co.GetComponent<Player> ()) {
+			GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);	
+			g.GetComponent<Bullet>().target = co.transform;
+		}
+	}
+
 }
