@@ -5,19 +5,43 @@ public class Enemy : MonoBehaviour {
 
 
 	protected float rotationSpeed;
-	protected float health;
+    public float distance;
+    
 
 
 	// Use this for initialization
 	void Start () {
-		rotationSpeed = 5.0f;
-		health = 2.0f;
+
+       
+
+		GameObject castle = GameObject.Find ("Castle");
+        GameObject tower = GameObject.Find("Tower");
+        distance = Vector3.Distance(castle.transform.position, tower.transform.position);
+		if (distance < 10) {
+			GetComponent<NavMeshAgent>().destination = castle.transform.position;
+				}
+        else
+        {
+            GetComponent<NavMeshAgent>().destination = tower.transform.position;
+        }
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (this.GetComponent<Health>().currentHealth < 0)
+        {
+            Destroy(gameObject);
+        }
 	
 	}
 
-	public virtual void TakeDamage(float a_damage){}
+	void OnTriggerEnter(Collider co)
+	{
+		if (co.name == "Castle") {
+			//co.GetComponentInChildren<Health>().decrease();
+			Destroy(gameObject);
+				}
+	}
 }

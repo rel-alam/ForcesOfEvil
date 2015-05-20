@@ -19,13 +19,13 @@ public class Sword : Weapon{
 
 	}
 
-	void OnCollisionEnter(Collision collision)
+	/*void OnCollisionEnter(Collision collision)
 	{
 		if(collision.transform.tag == "Enemy")
 		{
 			GetComponent<Enemy>().TakeDamage(damage);
 			print ("Weapon function hit!");
 		}
-	}
+	}*/
 }
 

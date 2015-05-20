@@ -3,28 +3,25 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
-	TextMesh tm;
+    public int health = 20;
+    public int currentHealth;
+   // bool damaged;
 
 	// Use this for initialization
 	void Start () {
-		tm = GetComponent<TextMesh>();
+
+        currentHealth = health;
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.forward = Camera.main.transform.forward;
-	}
+     //   damaged = false;
+    }
 
-	public int current()
-	{
-		return tm.text.Length;
-		}
-
-	public void decrease()
-	{
-		if (current () > 1)
-						tm.text = tm.text.Remove (tm.text.Length - 1);
-				else
-						Destroy (transform.parent.gameObject);
-	}
+    public void TakeDamage (int amount)
+    {
+     //   damaged = true;
+        currentHealth -= amount;
+    }
 }
