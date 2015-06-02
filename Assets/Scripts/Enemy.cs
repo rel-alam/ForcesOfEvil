@@ -16,7 +16,12 @@ public class Enemy : MonoBehaviour {
 
 		GameObject castle = GameObject.Find ("Castle");
         GameObject tower = GameObject.Find("Tower");
-        distance = Vector3.Distance(castle.transform.position, tower.transform.position);
+		if (tower != null) {
+						distance = Vector3.Distance (castle.transform.position, tower.transform.position);
+				} else {
+			distance = 0;
+				}
+        
 		if (distance < 10) {
 			GetComponent<NavMeshAgent>().destination = castle.transform.position;
 				}
