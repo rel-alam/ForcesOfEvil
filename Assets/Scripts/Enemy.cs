@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour {
 
 	protected float rotationSpeed;
     public float distance;
+    public GameObject bulletPrefab;
+    public int attackDamage = 3;
     
 
 
@@ -14,39 +16,46 @@ public class Enemy : MonoBehaviour {
 
        
 
-		GameObject castle = GameObject.Find ("Castle");
-        GameObject tower = GameObject.Find("Tower");
-		if (tower != null) {
-						distance = Vector3.Distance (castle.transform.position, tower.transform.position);
-				} else {
-			distance = 0;
-				}
-        
-		if (distance < 10) {
-			GetComponent<NavMeshAgent>().destination = castle.transform.position;
-				}
-        else
-        {
-            GetComponent<NavMeshAgent>().destination = tower.transform.position;
-        }
+		
+
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (this.GetComponent<Health>().currentHealth < 0)
+        GameObject castle = GameObject.Find("Castle");
+        GameObject tower = GameObject.Find("Tower");
+        if (tower != null)
         {
-            Destroy(gameObject);
+            distance = Vector3.Distance(castle.transform.position, tower.transform.position);
         }
-	
+        else
+        {
+            distance = 0;
+        }
+
+        if (distance < 10)
+        {
+            GetComponent<NavMeshAgent>().destination = castle.transform.position;
+        }
+        else
+        {
+            GetComponent<NavMeshAgent>().destination = tower.transform.position;
+        }
 	}
 
 	void OnTriggerEnter(Collider co)
 	{
-		if (co.name == "Castle") {
-			//co.GetComponentInChildren<Health>().decrease();
-			Destroy(gameObject);
-				}
+		if (co.name == "Castle") 
+        {
+              GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+              g.GetComponent<Bullet>().target = co.transform;
+              g.GetComponent<Bullet>().owner = this.gameObject;
+		}
 	}
+
+    void AddDamage()
+    {
+        GetComponent<Health>().TakeDamage(10);
+    }
 }

@@ -16,12 +16,14 @@ public class Health : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-     //   damaged = false;
+       if(currentHealth <= 0)
+       {
+           Destroy(gameObject);
+       }
     }
 
     public void TakeDamage (int amount)
     {
-     //   damaged = true;
         currentHealth -= amount;
     }
 }

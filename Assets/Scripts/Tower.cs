@@ -7,37 +7,42 @@ public class Tower : MonoBehaviour {
 
 	public float rotationSpeed = 35;
     public int attackDamage = 3;
-    Health health;
+    float coolDown = 0.0f;
 
 
     void Start()
     {
-        health = GetComponent<Health>();
     }
 	// Update is called once per frame
 	void Update () {
 		transform.Rotate (Vector3.up * Time.deltaTime * rotationSpeed, Space.World);
-
-        if (health.currentHealth <= 0)
-        {
-            Destroy(gameObject);
-        }
+        coolDown -= Time.deltaTime;
 	}
-	
 
-	void OnTriggerEnter(Collider co)
+
+    void OnTriggerStay(Collider co)
 	{
-		if (co.GetComponent<Player> ()) {
-			GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);	
-			g.GetComponent<Bullet>().target = co.transform;
-			g.GetComponent<Bullet>().owner = this.gameObject;
-
-		}
-        if (co.GetComponent<Enemy>())
+        if (coolDown <= 0)
         {
-            GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            g.GetComponent<Bullet>().target = co.transform;
-            g.GetComponent<Bullet>().owner = this.gameObject;
+            if (co.GetComponent<Player>())
+            {
+                GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+               // g.GetComponent<Bullet>().target = co.transform;
+               // g.GetComponent<Bullet>().owner = this.gameObject;
+                g.GetComponent<CannonBall>().target = co.transform;
+                g.GetComponent<CannonBall>().owner = this.gameObject;
+
+            }
+            if (co.GetComponent<Enemy>())
+            {
+                GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                //g.GetComponent<Bullet>().target = co.transform;
+                //g.GetComponent<Bullet>().owner = this.gameObject;
+                g.GetComponent<CannonBall>().target = co.transform;
+                g.GetComponent<CannonBall>().owner = this.gameObject;
+            }
+
+            coolDown = 3.0f;
         }
 	}
 

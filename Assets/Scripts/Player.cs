@@ -10,7 +10,8 @@ public class Player : MonoBehaviour {
     public float coolDown;
     public int attackDamage = 3;
 
-    Health health;
+    bool melee = false;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,6 @@ public class Player : MonoBehaviour {
 		speed =  5.0f;
 		rotationSpeed = 5.0f;	
         coolDown = 3.0f;
-        health = GetComponent<Health>();
 
 	}
 	
@@ -48,35 +48,59 @@ public class Player : MonoBehaviour {
 			this.transform.position += new Vector3(speedDt, 0, 0);
 		}
 
-		if(Input.GetKey(KeyCode.RightArrow))
-		{
-			this.transform.Rotate(0, rotationSpeed, 0);
-		}
-		else if(Input.GetKey(KeyCode.LeftArrow))
-		{
-			this.transform.Rotate(0, -rotationSpeed, 0);
-			print ("Pushed Left Arrow");
-		}
+		//if(Input.GetKey(KeyCode.RightArrow))
+		//{
+		//	this.transform.Rotate(0, rotationSpeed, 0);
+		//}
+		//else if(Input.GetKey(KeyCode.LeftArrow))
+		//{
+		//	this.transform.Rotate(0, -rotationSpeed, 0);
+		//	print ("Pushed Left Arrow");
+		//}
 
-        if(health.currentHealth <= 0)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && melee != true)
         {
-            Destroy(gameObject);
+            melee = true;
+            print("Melee is On");
         }
+        else if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            melee = false;
+            print("Melee is off -- Now ranging");
+        }
+
+
+
         
 
 	}
 
 	void OnTriggerStay(Collider co)
 	{
-		if (Input.GetKey (KeyCode.Space) && coolDown <= 0) {
-						if (co.GetComponent<Tower> ()) {
-								GameObject g = (GameObject)Instantiate (bulletPrefab, transform.position, Quaternion.identity);	
-								g.GetComponent<Bullet> ().target = co.transform;
+		if (Input.GetKey (KeyCode.Space) && coolDown <= 0) 
+        {
+			if (co.GetComponent<Tower> () && melee == false) 
+            {
+				GameObject g = (GameObject)Instantiate (bulletPrefab, transform.position, Quaternion.identity);	
+				g.GetComponent<Bullet>().target = co.transform;
 				g.GetComponent<Bullet>().owner = this.gameObject;
-                coolDown = 3.0f;
-						}
-				}
+
+                
+            }
+            else if(co.GetComponent<Tower>() && melee == true && Vector3.Distance (this.transform.position, co.transform.position) < 5)
+            {
+                co.GetComponent<Tower>().GetComponent<Health>().TakeDamage(100);
+            }
+
+            coolDown = 3.0f;
+        }
 	}
+
+
+    void AddDamage()
+    {
+        GetComponent<Health>().TakeDamage(10);
+    }
 
 
 }
