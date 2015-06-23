@@ -27,19 +27,32 @@ public class Tower : MonoBehaviour {
             if (co.GetComponent<Player>())
             {
                 GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-               // g.GetComponent<Bullet>().target = co.transform;
-               // g.GetComponent<Bullet>().owner = this.gameObject;
-                g.GetComponent<CannonBall>().target = co.transform;
-                g.GetComponent<CannonBall>().owner = this.gameObject;
+                if(CompareTag("Arrow"))
+                {
+                    g.GetComponent<Bullet>().target = co.transform;
+                    g.GetComponent<Bullet>().owner = this.gameObject;
+                }
+                else if (CompareTag("Enemy"))
+                {
+                    g.GetComponent<CannonBall>().target = co.transform;
+                    g.GetComponent<CannonBall>().owner = this.gameObject;
+                }
 
             }
             if (co.GetComponent<Enemy>())
             {
                 GameObject g = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                //g.GetComponent<Bullet>().target = co.transform;
-                //g.GetComponent<Bullet>().owner = this.gameObject;
-                g.GetComponent<CannonBall>().target = co.transform;
-                g.GetComponent<CannonBall>().owner = this.gameObject;
+                if (CompareTag("Arrow"))
+                {
+                    g.GetComponent<Bullet>().target = co.transform;
+                    g.GetComponent<Bullet>().owner = this.gameObject;
+                }
+
+                else if (CompareTag("Enemy"))
+                {
+                    g.GetComponent<CannonBall>().target = co.transform;
+                    g.GetComponent<CannonBall>().owner = this.gameObject;
+                }
             }
 
             coolDown = 3.0f;

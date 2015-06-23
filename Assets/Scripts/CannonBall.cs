@@ -56,17 +56,17 @@ public class CannonBall : MonoBehaviour {
                 ExplosionDamage(co.transform.position, 5);
                 Destroy(gameObject);
             }
-            if (owner.name == "Player")
+            if (co.name == "Player")
             {
                 //print(transform.position);
                 
-                health.TakeDamage(owner.GetComponent<Player>().attackDamage);
+                health.TakeDamage(co.GetComponent<Player>().attackDamage);
                 ExplosionDamage(co.transform.position, 5);
                 Destroy(gameObject);
             }
-            if (owner.CompareTag("Minion"))
+            if (co.CompareTag("Minion"))
             {
-                health.TakeDamage(owner.GetComponent<Enemy>().attackDamage);
+                health.TakeDamage(co.GetComponent<Enemy>().attackDamage);
                 ExplosionDamage(co.transform.position, 5);
                 Destroy(gameObject);
             }

@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 43c51febddfa9d948bcb10c22bb8105c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: arrow_tower_arrow_back
+    100004: arrow_tower_arrow_front
+    100006: arrow_tower_arrow_left
+    100008: arrow_tower_arrow_right
+    100010: arrow_tower_crossbow_back
+    100012: arrow_tower_crossbow_front
+    100014: arrow_tower_crossbow_left
+    100016: arrow_tower_crossbow_right
+    100018: arrow_tower_flag_back
+    100020: arrow_tower_flag_left
+    100022: arrow_tower_flag_right
+    100024: arrow_tower_inside1
+    100026: flag_front_arrow_tower
+    400000: //RootNode
+    400002: arrow_tower_arrow_back
+    400004: arrow_tower_arrow_front
+    400006: arrow_tower_arrow_left
+    400008: arrow_tower_arrow_right
+    400010: arrow_tower_crossbow_back
+    400012: arrow_tower_crossbow_front
+    400014: arrow_tower_crossbow_left
+    400016: arrow_tower_crossbow_right
+    400018: arrow_tower_flag_back
+    400020: arrow_tower_flag_left
+    400022: arrow_tower_flag_right
+    400024: arrow_tower_inside1
+    400026: flag_front_arrow_tower
+    2300000: arrow_tower_arrow_back
+    2300002: arrow_tower_arrow_front
+    2300004: arrow_tower_arrow_left
+    2300006: arrow_tower_arrow_right
+    2300008: arrow_tower_crossbow_back
+    2300010: arrow_tower_crossbow_front
+    2300012: arrow_tower_crossbow_left
+    2300014: arrow_tower_crossbow_right
+    2300016: arrow_tower_flag_back
+    2300018: arrow_tower_flag_left
+    2300020: arrow_tower_flag_right
+    2300022: arrow_tower_inside1
+    2300024: flag_front_arrow_tower
+    3300000: arrow_tower_arrow_back
+    3300002: arrow_tower_arrow_front
+    3300004: arrow_tower_arrow_left
+    3300006: arrow_tower_arrow_right
+    3300008: arrow_tower_crossbow_back
+    3300010: arrow_tower_crossbow_front
+    3300012: arrow_tower_crossbow_left
+    3300014: arrow_tower_crossbow_right
+    3300016: arrow_tower_flag_back
+    3300018: arrow_tower_flag_left
+    3300020: arrow_tower_flag_right
+    3300022: arrow_tower_inside1
+    3300024: flag_front_arrow_tower
+    4300000: arrow_tower_arrow_back
+    4300002: arrow_tower_arrow_front
+    4300004: arrow_tower_arrow_left
+    4300006: arrow_tower_arrow_right
+    4300008: arrow_tower_crossbow_back
+    4300010: arrow_tower_crossbow_front
+    4300012: arrow_tower_crossbow_left
+    4300014: arrow_tower_crossbow_right
+    4300016: arrow_tower_flag_back
+    4300018: arrow_tower_flag_left
+    4300020: arrow_tower_flag_right
+    4300022: arrow_tower_inside1
+    4300024: flag_front_arrow_tower
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

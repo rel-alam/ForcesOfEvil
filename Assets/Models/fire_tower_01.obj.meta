@@ -1,0 +1,92 @@
+fileFormatVersion: 2
+guid: ae8af82663c3ce548807c54614418553
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: brazier_fire_tower
+    100002: //RootNode
+    100004: fire_tower_flag_back
+    100006: fire_tower_flag_front
+    100008: fire_tower_flag_left
+    100010: fire_tower_flag_right
+    100012: fire_tower_tower
+    400000: brazier_fire_tower
+    400002: //RootNode
+    400004: fire_tower_flag_back
+    400006: fire_tower_flag_front
+    400008: fire_tower_flag_left
+    400010: fire_tower_flag_right
+    400012: fire_tower_tower
+    2300000: brazier_fire_tower
+    2300002: fire_tower_flag_back
+    2300004: fire_tower_flag_front
+    2300006: fire_tower_flag_left
+    2300008: fire_tower_flag_right
+    2300010: fire_tower_tower
+    3300000: brazier_fire_tower
+    3300002: fire_tower_flag_back
+    3300004: fire_tower_flag_front
+    3300006: fire_tower_flag_left
+    3300008: fire_tower_flag_right
+    3300010: fire_tower_tower
+    4300000: brazier_fire_tower
+    4300002: fire_tower_flag_back
+    4300004: fire_tower_flag_front
+    4300006: fire_tower_flag_left
+    4300008: fire_tower_flag_right
+    4300010: fire_tower_tower
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

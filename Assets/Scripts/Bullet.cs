@@ -36,7 +36,7 @@ public class Bullet : MonoBehaviour
         if (co.name != owner.name)
         {
           health = co.GetComponent<Health>();
-          if(owner.name == "Tower")
+          if (owner.CompareTag("Enemy") || owner.CompareTag("Arrow"))
           {
               health.TakeDamage(owner.GetComponent<Tower>().attackDamage);
               Destroy(gameObject);

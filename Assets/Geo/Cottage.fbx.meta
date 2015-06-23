@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 2a7bb1fc5672e2f47b5f704d929d1e89
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Attic_group
+    100002: Building_group
+    100004: Chimney_geo
+    100006: Chimney_geo1
+    100008: Chimney_group
+    100010: //RootNode
+    100012: door_geo
+    100014: frame_geo
+    100016: frame_geo 1
+    100018: frame_geo 2
+    100020: frame_geo 3
+    100022: frame_geo 4
+    100024: frame_geo 5
+    100026: frame_geo 6
+    100028: frame_geo1
+    100030: frame_geo10
+    100032: frame_geo11
+    100034: frame_geo12
+    100036: frame_geo13
+    100038: frame_geo14
+    100040: frame_geo15
+    100042: frame_geo16
+    100044: frame_geo17
+    100046: frame_geo18
+    100048: frame_geo2
+    100050: frame_geo20
+    100052: frame_geo21
+    100054: frame_geo22
+    100056: frame_geo23
+    100058: frame_geo24
+    100060: frame_geo25
+    100062: frame_geo26
+    100064: frame_geo27
+    100066: frame_geo28
+    100068: frame_geo29
+    100070: frame_geo3
+    100072: frame_geo30
+    100074: frame_geo31
+    100076: frame_geo32
+    100078: frame_geo33
+    100080: frame_geo34
+    100082: frame_geo35
+    100084: frame_geo36
+    100086: frame_geo38
+    100088: frame_geo39
+    100090: frame_geo4
+    100092: frame_geo40
+    100094: frame_geo41
+    100096: frame_geo42
+    100098: frame_geo43
+    100100: frame_geo44
+    100102: frame_geo45
+    100104: frame_geo46
+    100106: frame_geo47
+    100108: frame_geo48
+    100110: frame_geo49
+    100112: frame_geo5
+    100114: frame_geo50
+    100116: frame_geo51
+    100118: frame_geo52
+    100120: frame_geo53
+    100122: frame_geo54
+    100124: frame_geo55
+    100126: frame_geo56
+    100128: frame_geo57
+    100130: frame_geo58
+    100132: frame_geo59
+    100134: frame_geo6
+    100136: frame_geo60
+    100138: frame_geo61
+    100140: frame_geo62
+    100142: frame_geo63
+    100144: frame_geo64
+    100146: frame_geo65
+    100148: frame_geo66
+    100150: frame_geo67
+    100152: frame_geo68
+    100154: frame_geo69
+    100156: frame_geo7
+    100158: frame_geo70
+    100160: frame_geo71
+    100162: frame_geo72
+    100164: frame_geo73
+    100166: frame_geo74
+    100168: frame_geo75
+    100170: frame_geo76
+    100172: frame_geo77
+    100174: frame_geo78
+    100176: frame_geo79
+    100178: frame_geo8
+    100180: frame_geo80
+    100182: frame_geo81
+    100184: frame_geo82
+    100186: frame_geo83
+    100188: frame_geo84
+    100190: frame_geo9
+    100192: Frame_group
+    100194: Frame_group 1
+    100196: Frame_group 2
+    100198: Frame_group 3
+    100200: Frame_group 4
+    100202: Frame_group 5
+    100204: Frame_group 6
+    100206: pCube19
+    100208: pCube20
+    100210: pCube21
+    100212: roof_attic_geo
+    100214: roof_attic_geo1
+    100216: roof_attic_geo2
+    100218: Roof_group
+    100220: roof_main_geo
+    100222: Wall_Attic_large_group
+    100224: Wall_Attic_small_group
+    100226: Wall_Attic_small_group1
+    100228: Wall_front_group
+    100230: Wall_front_group1
+    100232: wall_geo
+    100234: wall_geo1
+    100236: Wall_side_group
+    100238: Wall_side_group1
+    100240: window_geo
+    100242: window_geo 1
+    100244: window_geo 2
+    100246: window_geo 3
+    100248: window_geo 4
+    100250: window_geo 5
+    100252: window_geo1
+    100254: window_geo2
+    100256: window_geo3
+    100258: window_geo4
+    100260: window_geo5
+    100262: window_geo6
+    100264: window_geo7
+    100266: window_geo8
+    100268: Window_group
+    100270: Window_group 1
+    100272: Window_group 2
+    100274: Window_group 3
+    400000: Attic_group
+    400002: Building_group
+    400004: Chimney_geo
+    400006: Chimney_geo1
+    400008: Chimney_group
+    400010: //RootNode
+    400012: door_geo
+    400014: frame_geo
+    400016: frame_geo 1
+    400018: frame_geo 2
+    400020: frame_geo 3
+    400022: frame_geo 4
+    400024: frame_geo 5
+    400026: frame_geo 6
+    400028: frame_geo1
+    400030: frame_geo10
+    400032: frame_geo11
+    400034: frame_geo12
+    400036: frame_geo13
+    400038: frame_geo14
+    400040: frame_geo15
+    400042: frame_geo16
+    400044: frame_geo17
+    400046: frame_geo18
+    400048: frame_geo2
+    400050: frame_geo20
+    400052: frame_geo21
+    400054: frame_geo22
+    400056: frame_geo23
+    400058: frame_geo24
+    400060: frame_geo25
+    400062: frame_geo26
+    400064: frame_geo27
+    400066: frame_geo28
+    400068: frame_geo29
+    400070: frame_geo3
+    400072: frame_geo30
+    400074: frame_geo31
+    400076: frame_geo32
+    400078: frame_geo33
+    400080: frame_geo34
+    400082: frame_geo35
+    400084: frame_geo36
+    400086: frame_geo38
+    400088: frame_geo39
+    400090: frame_geo4
+    400092: frame_geo40
+    400094: frame_geo41
+    400096: frame_geo42
+    400098: frame_geo43
+    400100: frame_geo44
+    400102: frame_geo45
+    400104: frame_geo46
+    400106: frame_geo47
+    400108: frame_geo48
+    400110: frame_geo49
+    400112: frame_geo5
+    400114: frame_geo50
+    400116: frame_geo51
+    400118: frame_geo52
+    400120: frame_geo53
+    400122: frame_geo54
+    400124: frame_geo55
+    400126: frame_geo56
+    400128: frame_geo57
+    400130: frame_geo58
+    400132: frame_geo59
+    400134: frame_geo6
+    400136: frame_geo60
+    400138: frame_geo61
+    400140: frame_geo62
+    400142: frame_geo63
+    400144: frame_geo64
+    400146: frame_geo65
+    400148: frame_geo66
+    400150: frame_geo67
+    400152: frame_geo68
+    400154: frame_geo69
+    400156: frame_geo7
+    400158: frame_geo70
+    400160: frame_geo71
+    400162: frame_geo72
+    400164: frame_geo73
+    400166: frame_geo74
+    400168: frame_geo75
+    400170: frame_geo76
+    400172: frame_geo77
+    400174: frame_geo78
+    400176: frame_geo79
+    400178: frame_geo8
+    400180: frame_geo80
+    400182: frame_geo81
+    400184: frame_geo82
+    400186: frame_geo83
+    400188: frame_geo84
+    400190: frame_geo9
+    400192: Frame_group
+    400194: Frame_group 1
+    400196: Frame_group 2
+    400198: Frame_group 3
+    400200: Frame_group 4
+    400202: Frame_group 5
+    400204: Frame_group 6
+    400206: pCube19
+    400208: pCube20
+    400210: pCube21
+    400212: roof_attic_geo
+    400214: roof_attic_geo1
+    400216: roof_attic_geo2
+    400218: Roof_group
+    400220: roof_main_geo
+    400222: Wall_Attic_large_group
+    400224: Wall_Attic_small_group
+    400226: Wall_Attic_small_group1
+    400228: Wall_front_group
+    400230: Wall_front_group1
+    400232: wall_geo
+    400234: wall_geo1
+    400236: Wall_side_group
+    400238: Wall_side_group1
+    400240: window_geo
+    400242: window_geo 1
+    400244: window_geo 2
+    400246: window_geo 3
+    400248: window_geo 4
+    400250: window_geo 5
+    400252: window_geo1
+    400254: window_geo2
+    400256: window_geo3
+    400258: window_geo4
+    400260: window_geo5
+    400262: window_geo6
+    400264: window_geo7
+    400266: window_geo8
+    400268: Window_group
+    400270: Window_group 1
+    400272: Window_group 2
+    400274: Window_group 3
+    2300000: Chimney_geo
+    2300002: Chimney_geo1
+    2300004: door_geo
+    2300006: frame_geo
+    2300008: frame_geo 1
+    2300010: frame_geo 2
+    2300012: frame_geo 3
+    2300014: frame_geo 4
+    2300016: frame_geo 5
+    2300018: frame_geo 6
+    2300020: frame_geo1
+    2300022: frame_geo10
+    2300024: frame_geo11
+    2300026: frame_geo12
+    2300028: frame_geo13
+    2300030: frame_geo14
+    2300032: frame_geo15
+    2300034: frame_geo16
+    2300036: frame_geo17
+    2300038: frame_geo18
+    2300040: frame_geo2
+    2300042: frame_geo20
+    2300044: frame_geo21
+    2300046: frame_geo22
+    2300048: frame_geo23
+    2300050: frame_geo24
+    2300052: frame_geo25
+    2300054: frame_geo26
+    2300056: frame_geo27
+    2300058: frame_geo28
+    2300060: frame_geo29
+    2300062: frame_geo3
+    2300064: frame_geo30
+    2300066: frame_geo31
+    2300068: frame_geo32
+    2300070: frame_geo33
+    2300072: frame_geo34
+    2300074: frame_geo35
+    2300076: frame_geo36
+    2300078: frame_geo38
+    2300080: frame_geo39
+    2300082: frame_geo4
+    2300084: frame_geo40
+    2300086: frame_geo41
+    2300088: frame_geo42
+    2300090: frame_geo43
+    2300092: frame_geo44
+    2300094: frame_geo45
+    2300096: frame_geo46
+    2300098: frame_geo47
+    2300100: frame_geo48
+    2300102: frame_geo49
+    2300104: frame_geo5
+    2300106: frame_geo50
+    2300108: frame_geo51
+    2300110: frame_geo52
+    2300112: frame_geo53
+    2300114: frame_geo54
+    2300116: frame_geo55
+    2300118: frame_geo56
+    2300120: frame_geo57
+    2300122: frame_geo58
+    2300124: frame_geo59
+    2300126: frame_geo6
+    2300128: frame_geo60
+    2300130: frame_geo61
+    2300132: frame_geo62
+    2300134: frame_geo63
+    2300136: frame_geo64
+    2300138: frame_geo65
+    2300140: frame_geo66
+    2300142: frame_geo67
+    2300144: frame_geo68
+    2300146: frame_geo69
+    2300148: frame_geo7
+    2300150: frame_geo70
+    2300152: frame_geo71
+    2300154: frame_geo72
+    2300156: frame_geo73
+    2300158: frame_geo74
+    2300160: frame_geo75
+    2300162: frame_geo76
+    2300164: frame_geo77
+    2300166: frame_geo78
+    2300168: frame_geo79
+    2300170: frame_geo8
+    2300172: frame_geo80
+    2300174: frame_geo81
+    2300176: frame_geo82
+    2300178: frame_geo83
+    2300180: frame_geo84
+    2300182: frame_geo9
+    2300184: pCube19
+    2300186: pCube20
+    2300188: pCube21
+    2300190: roof_attic_geo
+    2300192: roof_attic_geo1
+    2300194: roof_attic_geo2
+    2300196: roof_main_geo
+    2300198: wall_geo
+    2300200: wall_geo1
+    2300202: window_geo
+    2300204: window_geo 1
+    2300206: window_geo 2
+    2300208: window_geo 3
+    2300210: window_geo 4
+    2300212: window_geo 5
+    2300214: window_geo1
+    2300216: window_geo2
+    2300218: window_geo3
+    2300220: window_geo4
+    2300222: window_geo5
+    2300224: window_geo6
+    2300226: window_geo7
+    2300228: window_geo8
+    2300230: //RootNode
+    3300000: Chimney_geo
+    3300002: Chimney_geo1
+    3300004: door_geo
+    3300006: frame_geo
+    3300008: frame_geo 1
+    3300010: frame_geo 2
+    3300012: frame_geo 3
+    3300014: frame_geo 4
+    3300016: frame_geo 5
+    3300018: frame_geo 6
+    3300020: frame_geo1
+    3300022: frame_geo10
+    3300024: frame_geo11
+    3300026: frame_geo12
+    3300028: frame_geo13
+    3300030: frame_geo14
+    3300032: frame_geo15
+    3300034: frame_geo16
+    3300036: frame_geo17
+    3300038: frame_geo18
+    3300040: frame_geo2
+    3300042: frame_geo20
+    3300044: frame_geo21
+    3300046: frame_geo22
+    3300048: frame_geo23
+    3300050: frame_geo24
+    3300052: frame_geo25
+    3300054: frame_geo26
+    3300056: frame_geo27
+    3300058: frame_geo28
+    3300060: frame_geo29
+    3300062: frame_geo3
+    3300064: frame_geo30
+    3300066: frame_geo31
+    3300068: frame_geo32
+    3300070: frame_geo33
+    3300072: frame_geo34
+    3300074: frame_geo35
+    3300076: frame_geo36
+    3300078: frame_geo38
+    3300080: frame_geo39
+    3300082: frame_geo4
+    3300084: frame_geo40
+    3300086: frame_geo41
+    3300088: frame_geo42
+    3300090: frame_geo43
+    3300092: frame_geo44
+    3300094: frame_geo45
+    3300096: frame_geo46
+    3300098: frame_geo47
+    3300100: frame_geo48
+    3300102: frame_geo49
+    3300104: frame_geo5
+    3300106: frame_geo50
+    3300108: frame_geo51
+    3300110: frame_geo52
+    3300112: frame_geo53
+    3300114: frame_geo54
+    3300116: frame_geo55
+    3300118: frame_geo56
+    3300120: frame_geo57
+    3300122: frame_geo58
+    3300124: frame_geo59
+    3300126: frame_geo6
+    3300128: frame_geo60
+    3300130: frame_geo61
+    3300132: frame_geo62
+    3300134: frame_geo63
+    3300136: frame_geo64
+    3300138: frame_geo65
+    3300140: frame_geo66
+    3300142: frame_geo67
+    3300144: frame_geo68
+    3300146: frame_geo69
+    3300148: frame_geo7
+    3300150: frame_geo70
+    3300152: frame_geo71
+    3300154: frame_geo72
+    3300156: frame_geo73
+    3300158: frame_geo74
+    3300160: frame_geo75
+    3300162: frame_geo76
+    3300164: frame_geo77
+    3300166: frame_geo78
+    3300168: frame_geo79
+    3300170: frame_geo8
+    3300172: frame_geo80
+    3300174: frame_geo81
+    3300176: frame_geo82
+    3300178: frame_geo83
+    3300180: frame_geo84
+    3300182: frame_geo9
+    3300184: pCube19
+    3300186: pCube20
+    3300188: pCube21
+    3300190: roof_attic_geo
+    3300192: roof_attic_geo1
+    3300194: roof_attic_geo2
+    3300196: roof_main_geo
+    3300198: wall_geo
+    3300200: wall_geo1
+    3300202: window_geo
+    3300204: window_geo 1
+    3300206: window_geo 2
+    3300208: window_geo 3
+    3300210: window_geo 4
+    3300212: window_geo 5
+    3300214: window_geo1
+    3300216: window_geo2
+    3300218: window_geo3
+    3300220: window_geo4
+    3300222: window_geo5
+    3300224: window_geo6
+    3300226: window_geo7
+    3300228: window_geo8
+    3300230: //RootNode
+    4300000: door_geo
+    4300002: window_geo2
+    4300004: window_geo1
+    4300006: window_geo
+    4300008: frame_geo18
+    4300010: frame_geo17
+    4300012: frame_geo16
+    4300014: frame_geo15
+    4300016: frame_geo14
+    4300018: frame_geo13
+    4300020: frame_geo12
+    4300022: frame_geo11
+    4300024: frame_geo10
+    4300026: frame_geo9
+    4300028: frame_geo8
+    4300030: frame_geo7
+    4300032: frame_geo6
+    4300034: frame_geo5
+    4300036: frame_geo4
+    4300038: frame_geo3
+    4300040: frame_geo2
+    4300042: frame_geo1
+    4300044: frame_geo
+    4300046: frame_geo81
+    4300048: pCube21
+    4300050: pCube20
+    4300052: pCube19
+    4300054: frame_geo
+    4300056: frame_geo20
+    4300058: frame_geo21
+    4300060: frame_geo22
+    4300062: frame_geo23
+    4300064: frame_geo24
+    4300066: frame_geo25
+    4300068: frame_geo26
+    4300070: frame_geo27
+    4300072: frame_geo28
+    4300074: frame_geo29
+    4300076: frame_geo30
+    4300078: frame_geo31
+    4300080: frame_geo32
+    4300082: frame_geo33
+    4300084: frame_geo34
+    4300086: frame_geo35
+    4300088: frame_geo36
+    4300090: frame_geo38
+    4300092: frame_geo82
+    4300094: window_geo
+    4300096: frame_geo
+    4300098: frame_geo39
+    4300100: frame_geo40
+    4300102: frame_geo41
+    4300104: frame_geo42
+    4300106: frame_geo43
+    4300108: frame_geo44
+    4300110: frame_geo45
+    4300112: Chimney_geo
+    4300114: Chimney_geo1
+    4300116: window_geo
+    4300118: frame_geo
+    4300120: frame_geo46
+    4300122: frame_geo47
+    4300124: frame_geo48
+    4300126: frame_geo49
+    4300128: frame_geo50
+    4300130: frame_geo51
+    4300132: frame_geo52
+    4300134: window_geo
+    4300136: frame_geo
+    4300138: frame_geo53
+    4300140: frame_geo54
+    4300142: frame_geo55
+    4300144: frame_geo56
+    4300146: frame_geo57
+    4300148: roof_main_geo
+    4300150: roof_attic_geo
+    4300152: roof_attic_geo1
+    4300154: roof_attic_geo2
+    4300156: wall_geo
+    4300158: wall_geo1
+    4300160: window_geo
+    4300162: window_geo3
+    4300164: window_geo4
+    4300166: window_geo5
+    4300168: frame_geo
+    4300170: frame_geo58
+    4300172: frame_geo59
+    4300174: frame_geo60
+    4300176: frame_geo61
+    4300178: frame_geo62
+    4300180: frame_geo63
+    4300182: frame_geo64
+    4300184: frame_geo65
+    4300186: frame_geo66
+    4300188: frame_geo67
+    4300190: frame_geo68
+    4300192: frame_geo69
+    4300194: frame_geo83
+    4300196: window_geo
+    4300198: window_geo6
+    4300200: window_geo7
+    4300202: window_geo8
+    4300204: frame_geo
+    4300206: frame_geo70
+    4300208: frame_geo71
+    4300210: frame_geo72
+    4300212: frame_geo73
+    4300214: frame_geo74
+    4300216: frame_geo75
+    4300218: frame_geo76
+    4300220: frame_geo77
+    4300222: frame_geo78
+    4300224: frame_geo79
+    4300226: frame_geo80
+    4300228: frame_geo84
+    4300230: Cottage_geo
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
